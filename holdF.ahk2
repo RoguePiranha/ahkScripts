@@ -1,0 +1,12 @@
+#Requires AutoHotkey v2.0.11 64-bit
+
+; This script holds the f key down if you press Alt + f until you press it again
+
+$!f::
+{
+  If GetKeyState("f")
+    Send("{f Up}")
+  Else
+    Send("{f Down}")
+Return
+}
